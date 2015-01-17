@@ -1,0 +1,44 @@
+html {
+    cursor:crosshair;
+  }
+ 
+body {
+  background-image: url("http://gdxblog.com/wp-content/uploads/2013/12/17-IMG_1919.jpg");
+  background-size:130%;
+  background-attachment: fixed;
+  }       
+ 
+ 
+ .rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+ }
+ 
+ .font{
+    font-family:'Indie Flower', cursive;
+    font-size:50px;
+  }
+ .font2 {
+  border: dotted;
+  position: absolute;
+  height: 90px;
+  background:#ccc;
+ }
+  
+ .blink {
+      animation: blink 1s steps(5, start) infinite;
+      -webkit-animation: blink 1s steps(5, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
